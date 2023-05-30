@@ -1,0 +1,297 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Dosis', sans-serif;
+}
+
+body {
+    width: 100%;
+    margin: 0 auto;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background-color: #E9ECF8;
+}
+
+main {
+    width: 95%;
+    margin: 10px auto;
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+
+header img {
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    margin-top: 10px;
+}
+
+.nav,
+footer {
+    background-color: rgba(173, 181, 189, 0.8);
+    box-shadow: 0 0 5px 2px rgba(0, 0, 0, 0.3);
+}
+
+nav,
+footer {
+    width: 100%;
+    padding: 5px 5px;
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding-top: 15px;
+    margin-top: auto;
+}
+
+textarea {
+    color: #0A3871;
+}
+
+.btn-blue {
+    color: #FFFFFF;
+    background-color: #0A3871;
+}
+
+.btn-blue:hover {
+    color: #FFFFFF;
+    background-color: #1f5fad;
+}
+
+.btn-grey {
+    color: #0A3871;
+    background-color: #DEE1E4;
+}
+
+.btn-grey:hover {
+    color: #0A3871;
+    background-color: #f3f7fa;
+}
+
+.icon-16 {
+    width: 16px;
+}
+
+.icon-32 {
+    width: 32px;
+    margin: 0 20px;
+}
+
+.brand-text-large,
+.brand-text-short {
+    font-weight: 700;
+}
+
+.brand-text-large {
+    display: none;
+}
+
+.user-message {
+    width: 98%;
+    padding: 15px;
+    font-size: 24px;
+    resize: none;
+    background-color: rgba(222, 225, 228, 0.3);
+    border-radius: 10px;
+    border-color: rgba(222, 225, 228, 0.7);
+    box-shadow: 0 0 5px 1px rgba(0, 0, 0, 0.01);
+    outline: none;
+}
+
+.btn {
+    width: 80%;
+    max-width: 80%;
+    height: 50px;
+    margin: 10px auto;
+    padding: 5px;
+    text-align: center;
+    font-weight: 600;
+    font-size: large;
+    border: 1px solid #0A3871;
+    border-radius: 10px;
+}
+
+.img-message {
+    display: none;
+}
+
+.container-btn-encrypt {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.display-container {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    margin: 10px auto;
+    background-color: #FFFFFF;
+    border-radius: 24px;
+    box-shadow: 5px 5px 20px #ADB5BD;
+}
+
+.display-container p,
+.input-container p {
+    padding: 10px;
+    margin: 5px;
+    text-align: center;
+}
+
+.empty-message1 {
+    font-size: x-large;
+    font-weight: 700
+}
+
+::placeholder {
+    font-weight: 500;
+    color: #0A3871;
+}
+
+#display-message {
+    width: 90%;
+    margin: 5px auto;
+    font-size: 24px;
+    word-break: break-all;
+    overflow-y: auto;
+}
+
+@media (min-width: 576px) {
+    main {
+        width: 95%;
+        margin: 0 auto;
+    }
+
+    .brand-text-short {
+        display: none;
+    }
+
+    .brand-text-large {
+        display: block;
+    }
+
+    .container-btn-encrypt {
+        flex-direction: row;
+    }
+
+    .container-btn-encrypt button {
+        margin: 10px;
+    }
+
+    .display-container {
+        width: 100%;
+    }
+
+    .display-container button {
+        width: 50%;
+    }
+}
+
+@media (min-width: 768px) {
+    footer {
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    .social-media {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .i-attribute {
+        font-size: small;
+    }
+
+    #display-message {
+        font-size: 32px;
+    }
+
+    .user-message {
+        font-size: 32px;
+    }
+}
+
+@media (min-width: 992px) {
+    main {
+        width: 90%;
+        height: 80vh;
+        margin: auto;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .input-container {
+        display: flex;
+        flex-direction: column;
+        width: 60%;
+        margin: 10px 20px;
+    }
+
+    .input-container p {
+        margin-top: auto;
+        margin-bottom: 10px;
+    }
+
+    .container-btn-encrypt {
+        margin-top: auto;
+        margin-bottom: 10px;
+    }
+
+    .display-container {
+        width: 40%;
+        margin: 10px 20px;
+    }
+
+    .img-message {
+        display: block;
+        width: 90%;
+        margin: 10px auto;
+    }
+
+    .btn-copy {
+        margin-top: auto;
+        margin-bottom: 25px;
+    }
+
+    ::placeholder {
+        font-weight: 600;
+        -webkit-text-stroke: 1px #000000;
+    }
+
+    textarea:focus::placeholder {
+        font-weight: 400;
+        color: #676C71;
+    }
+}
+
+@media (min-width: 1200px) {
+    main {
+        width: 80%;
+    }
+
+    .input-container {
+        width: 70%;
+    }
+
+    .display-container {
+        width: 30%;
+    }
+}
+
+@media (min-width: 1920px) {
+    main {
+        width: 70%;
+    }
+}

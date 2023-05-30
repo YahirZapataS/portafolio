@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@400;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="./css/style.css">
+        <script src="./js/main.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+        <link href="https://cdn.jsdelivr.net/npm/sweetalert2@11.7.5/dist/sweetalert2.min.css" rel="stylesheet">
+        <title> Alura - Encriptador de textos</title>
+    </head>
+
+    <body>
+    <nav class="nav">
+        <header>
+            <h1><img src="./img/logo.png" alt="Alura Latam Logo"></h1>
+            <p class="brand-text-large">Alura Latam Oracle Next Education - Encriptador de Textos</p>
+            <p class="brand-text-short">Encriptador de Texto</p>
+        </header>
+    </nav>
+
+        <main>
+            <section class="input-container">
+                <label for="user-message"></label><textarea class="user-message" name="user-message" id="user-message" rows="10" placeholder="Ingresa el texto aquí"></textarea>
+                <p><img class="icon-16" id="icon-16" src="./img/exclamation.png" alt="exclamation logo">  Sólo minúsculas y sin acentos</p>
+                <div class="container-btn-encrypt">
+                    <button class="btn btn-blue" onclick="botonEncriptar()">Encriptar</button>
+                    <button class="btn btn-grey" onclick="botonDesencriptar()">Desencriptar</button>
+                    <button class="btn btn-grey" onclick="limpiar()">Limpiar</button>
+                </div>
+            </section>
+
+            <section class="display-container">
+                <p id="display-message"></p>
+                <img id="img-empty" class="img-message" src="./img/empty_message.svg" alt="Mujer con diamante">
+                <p id="message1-empty" class="empty-message1">No se ha encontrado ningún mensaje</p>
+                <p id="message2-empty" class="empty-message2">Introduzca el texto que desea cifrar o descifrar</p>
+                <button class="btn btn-grey btn-copy" onclick="copiar()">Copiar</button>
+            </section>
+        </main>
+
+        <footer>
+            <p>hola amigos es mi pagina</p>
+        </footer>
+        <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.7.5/dist/sweetalert2.all.min.js"></script>
+    </body>
+</html>
