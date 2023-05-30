@@ -1,3 +1,3 @@
 # portafolio
 
-<a href="https://luzdalis-lopez.github.io/portafolio/">Visualiza mi repositorio</a>
+<a href="https://yahirzapatas.github.io/portafolio/">Visualiza mi repositorio</a>
